@@ -73,12 +73,20 @@ img{
     width: 100%;
     margin: 0 auto;
   }
+  
+  #lezioni , #steps {
+    font-size: 12px;
+    margin: 10px auto;
+    padding-right: 10px;
+  }
 
   h1 {
     font-size: 24px;
+    padding-top: 14px;
   }
 
   h3 {
+    font-size: 14px;
     margin: 0 auto;
   }
 
@@ -95,24 +103,27 @@ img{
     width: 100%;
     float: none;
   }
-
-  #lezioni, #steps, #why {
-    font-size: 12px;
-    margin: 10px auto;
-    padding-right: 10px;
-  }
-
+  
   #steps .row > .left,
   #steps .row > .central,
   #steps .row > .right{
   float: none;
   width: 100%;
-}
+  }
+
+  #steps .row > .right {
+  padding-bottom: 0;
+  } 
 
   #why .row > .first,
   #why .row > .second,
   #why .row > .third {
+    font-size: 11.5px;
     margin-top: 24px;
+  }
+
+  #why .row > .third {
+    padding-bottom: 16px;
   }
 
   #why .row img {
@@ -120,6 +131,6 @@ img{
     height: 50px;
     padding: 18px
   }
-
-  
 }
+
+
