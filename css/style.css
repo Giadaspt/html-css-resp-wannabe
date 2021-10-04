@@ -7,7 +7,7 @@
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row > .left, 
+#lezioni .row > .left,
 #lezioni .row > .right{
   width: 50%;
   float: left;
@@ -63,7 +63,86 @@ img{
 
 /*PARTE RESPONSIVE*/
 
-@media (max-width: 421px){
+@media (min-width: 421px) and (max-width: 780px) {
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 38px;
+    padding: 20px 0;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  .left, .central, .right {
+    padding: 0 16px;
+  }
+
+  #lezioni, #steps{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #lezioni .left,
+  #lezioni .right{
+    text-align: left;
+    max-width: 40%;
+    padding: 2% 5%;
+  }
+
+  #steps .left,
+  #steps .central{
+    padding: 2% 8%;
+  }
+
+  #steps .row .right {
+    text-align: center;
+    width: 95%;
+    padding: 2% 3%;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #why h1 {
+    margin-bottom: 0;
+    padding-top: 32px;
+  }
+
+  .first, .second, .third {
+    padding: 24px 0;
+  }
+
+  #why .row > .third {
+    padding-bottom: 16px;
+  }
+
+  #why .row img {
+    width: 100px;
+    height: 100px;
+    padding: 24px
+  }
+
+}
+
+@media  (max-width: 420px){
 
   .container.grey {
     background-color: rgb(242,242,205);
@@ -73,7 +152,7 @@ img{
     width: 100%;
     margin: 0 auto;
   }
-  
+
   #lezioni , #steps {
     font-size: 12px;
     margin: 10px auto;
@@ -98,12 +177,12 @@ img{
     padding-bottom: 16px;
   }
 
-  #lezioni .row > .left, 
+  #lezioni .row > .left,
   #lezioni .row > .right{
     width: 100%;
     float: none;
   }
-  
+
   #steps .row > .left,
   #steps .row > .central,
   #steps .row > .right{
@@ -113,7 +192,7 @@ img{
 
   #steps .row > .right {
   padding-bottom: 0;
-  } 
+  }
 
   #why .row > .first,
   #why .row > .second,
@@ -132,5 +211,4 @@ img{
     padding: 18px
   }
 }
-
 
