@@ -1,3 +1,4 @@
+
 .row {
   width: 992px;
   margin-left: auto;
@@ -61,3 +62,64 @@ img{
 }
 
 /*PARTE RESPONSIVE*/
+
+@media (max-width: 421px){
+
+  .container.grey {
+    background-color: rgb(242,242,205);
+  }
+
+  .row {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    margin: 0 auto;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  .left, .central, .right {
+    padding-bottom: 16px;
+  }
+
+  #lezioni .row > .left, 
+  #lezioni .row > .right{
+    width: 100%;
+    float: none;
+  }
+
+  #lezioni, #steps, #why {
+    font-size: 12px;
+    margin: 10px auto;
+    padding-right: 10px;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right{
+  float: none;
+  width: 100%;
+}
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    margin-top: 24px;
+  }
+
+  #why .row img {
+    width: 50px;
+    height: 50px;
+    padding: 18px
+  }
+
+  
+}
